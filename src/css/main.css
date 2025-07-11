@@ -1,0 +1,135 @@
+.home-section{
+    background-image: url("/img/home/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 810px;
+}
+.home-title{
+    margin-top: 260px;
+    font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.02;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #000807;
+}
+.home-text{
+    text-align: center;
+    margin-top: 12px;
+    width: 317px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.home-link{
+    margin-top: 12px;
+    background: #002b97;
+    border-radius: 4px;
+        width: 270px;
+        height: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        padding: 6px;
+        transition: all 0.3s ease;
+}
+.google-play-text{
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+.play-text{
+    font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #fff;
+}
+.home-link:hover{
+    background: #fee801;
+    border: 2px solid #002b97;
+}
+.home-link:hover p{
+  color: #000;  
+}
+@media only screen and (min-width: 1439px) {
+.home-section{
+    background-image: url("/img/home/desk.png");
+    height: 868px;
+}
+.home-title{
+    margin-top: 280px;
+    text-align: left;
+    width: 321px;
+    font-size: 50px;
+    margin-left: 363px;
+}
+.home-text{
+    margin-top: 26px;
+    text-align: left;
+    margin-left: 363px;
+}
+.home-link{
+    margin-top: 26px;
+    margin-left: 363px;  
+}
+}
+/* About */
+.about-container{
+    position: relative;
+}
+.about-one-img{
+    position: absolute;
+    width: 90px;
+        height: 83px;
+        top:0;
+        left: 80px;
+}
+.about-wrapper{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.span{
+    font-weight: 700;
+}
+.about-two-img{
+    position: absolute;
+    z-index: -1;
+    width: 230px;
+    height: 364px;
+    top: 70px;
+    right: 0;
+}
+@media only screen and (min-width: 1439px) {
+.about-wrapper{
+    margin-left: 350px; 
+    width: 700px;
+    gap: 56px;
+}
+.about-text-one{
+    width: 350px;
+}
+.about-text-two{
+    margin-left: 360px;
+    width: 350px;
+}
+.about-one-img{
+    z-index: -1;
+    top: -200px;
+    left: 0;
+    width: 736px;
+        height: 1000px;
+}
+.about-two-img{
+    width: 470px;
+        height: 500px;
+   top: 240px;
+}
+}
