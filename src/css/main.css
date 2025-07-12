@@ -287,3 +287,125 @@ padding-top: 20px;
     cursor: pointer;
 }
 }
+/* FAQ */
+.faq-container{
+    position: relative;
+}
+.faq-text{
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.faq-img-one{
+    width: 58px;
+        height: 48px;
+        position: absolute;
+        top: 24px;
+        left: 70px;
+}
+.faq-img-two{
+    width: 115px;
+        height: 95px;
+        position: absolute;
+        top: 10px;
+        left: 140px;
+}
+.faq-acc {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 336px;
+    margin: 0 auto;
+}
+
+.faq-acc-el {
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+border: 1px solid #9baebe;
+    padding: 16px 0px 16px;
+}
+
+.faq-acc-el-trigger {
+    width: 100%;
+    height: auto;
+    background: inherit;
+    border: none;
+border-top: 1px solid #9baebe;
+border-bottom: 1px solid #9baebe;
+    padding: 16px 12px;
+font-weight: 700;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border-bottom 0.3s easy;
+}
+
+.faq-acc-arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: inherit;
+    min-width: 48px;
+}
+
+.faq-img {
+    transform: rotate(270deg);
+    transition: transform 0.3s ease;
+}
+.faq-acc-el.open .faq-acc-el-trigger {
+    border-bottom: none;
+}
+.faq-acc-el.open .faq-acc-arr {
+    transform: rotate(180deg);
+}
+
+.faq-acc-arr.is-hidden {
+    display: none;
+}
+
+.faq-acc-el-descr-frame {
+    width: 336px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    padding: 0 12px;
+    border-bottom: 1px solid #9baebe;
+     transition: max-height 1s ease, opacity 0.5s ease, padding 0.5s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+    visibility: hidden;
+}
+
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+    visibility: visible;
+    opacity: 1;
+    background-color: inherit;
+ }
+@media only screen and (min-width: 1439px) {
+.faq-text{
+    margin-left: 350px;
+    margin-bottom: 60px;
+}
+.faq-acc{
+    width: 700px;
+}
+.faq-acc-el-descr-frame{
+    width: 700px;
+}
+.faq-img-one{
+    width: 121px;
+        height: 100px;
+        top: 200px;
+        left: 140px;
+}
+.faq-img-two{
+    width: 238px;
+        height: 196px;
+       top: 520px;
+      left: 1140px;
+}
+}
