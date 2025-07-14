@@ -1,0 +1,102 @@
+.cookie-popup {
+    position: fixed;
+    bottom: 30px;
+    left: 48%;
+    transform: translateX(-48%);
+    padding: 40px 28px;
+background: #fff;
+    z-index: 1000;
+    width: 374px;
+    height: auto;
+    display: none;
+}
+.popup-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.popup-title{
+    font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 0.91667;
+        color: #000;
+}
+.cookie-class {
+    width: 332px;
+font-size: 14px;
+color: #000;
+   text-align: left;
+}
+
+.cookie-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-accept {
+border-radius: 8px;
+    padding: 14px 12px;
+    width: 319px;
+    height: 45px;
+    background: #002b97;
+    color: #fff;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-decline {
+box-shadow: 0 1px 3px 0 #87614c;
+border: 1px solid #000;
+    border-radius: 8px;
+    padding: 14px 12px;
+    width: 319px;
+    height: 45px;
+    font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+    box-sizing: border-box;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1439px) {
+    .cookie-popup {
+        padding: 43px 108px;
+        width: 1439px;
+        height: auto;
+    }
+
+    .popup-wrapper {
+        display: flex;
+    }
+.popup-title{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+}
+    .cookie-class {
+        width: 1224px;
+        text-align: center;
+        font-size: 24px;
+}
+
+    .cookie-buttons {
+        flex-direction: row;
+width: 554px;
+    height: 55px;
+    }
+.btn-accept{
+    width: 269px;
+        height: 55px;
+}
+.btn-decline{
+    width: 269px;
+        height: 55px;
+}
+}
