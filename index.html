@@ -13,32 +13,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+  rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="/matching-go/favicon.png" />
 
     <title>Matching Go</title>
     <script type="module" crossorigin src="/matching-go/index.js"></script>
     <link rel="modulepreload" crossorigin href="/matching-go/assets/vendor-wKantkHV.js">
     <link rel="stylesheet" crossorigin href="/matching-go/assets/vendor-BMD19QWe.css">
-    <link rel="stylesheet" crossorigin href="/matching-go/assets/styles-B7Fz-s70.css">
+    <link rel="stylesheet" crossorigin href="/matching-go/assets/styles-q7XyIFyp.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-   
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <div class="header-wrapper"></div>
+    <img class="header-img" src="/matching-go/assets/dynamic-island-CI9SeQ51.png" alt="Dynamic Island" loading="lazy">
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.75 7.25H23M5 14H23H8.375M5 20.75H16.25" stroke="white" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      </span>
+    </button>
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="index.html#Home">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#About">About</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Features">Features</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Gallery">Gallery</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Reviews">Reviews</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#FAQ">FAQ</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li><a class="menu-list-item" href="index.html#Home">Home</a></li>
+    <li><a class="menu-list-item" href="index.html#About">About</a></li>
+    <li>
+      <a class="menu-list-item" href="index.html#Features">Features</a>
+    </li>
+    <li><a class="menu-list-item" href="index.html#Gallery">Gallery</a></li>
+    <li><a class="menu-list-item" href="index.html#Reviews">Reviews</a></li>
+    <li><a class="menu-list-item" href="index.html#FAQ">FAQ</a></li>
+  </ul>
+</div>
 
 
     <main>
       <!-- Loads the specified .html file -->
         <!-- Home -->
-<section class="home-section">
+<section class="home-section" id="Home">
     <div class="container">
         <h1 class="home-title">Matching Go! - Puzzle Games</h1>
         <p class="home-text">Clear your mind with soothing puzzle gameplay — Matching Go! makes thinking fun.</p>
@@ -52,7 +95,7 @@
     </div>
 </section>
 <!-- About -->
-<section class="about-section">
+<section class="about-section" id="About">
     <div class="container about-container">
         <h2 class="about-title">About</h2>
         <picture>
@@ -72,7 +115,7 @@
     </div>
 </section>
 <!-- Features -->
-<section class="features-section">
+<section class="features-section" id="Features">
     <div class="container">
         <h2 class="features-title">Features</h2>
         <ul class="features-list">
@@ -115,7 +158,7 @@
     </div>
 </section>
 <!-- Gallery -->
-<section class="gallery-section">
+<section class="gallery-section" id="Gallery">
     <div class="container">
         <h2 class="gallery-title">Gallery</h2>
         <div class="swiper gallery-swiper">
@@ -179,7 +222,7 @@
     </div>
 </section>
 <!-- Reviews -->
-<section class="reviews-section">
+<section class="reviews-section" id="Reviews">
     <div class="container">
         <h2 class="reviews-title">Reviews</h2>
                 <div class="swiper reviews-swiper">
@@ -214,7 +257,7 @@
     </div>
 </section>
 <!-- FAQ -->
-<article class="faq-section">
+<article class="faq-section" id="FAQ">
     <div class="container faq-container">
         <h2 class="faq-title">FAQ</h2>
         <p class="faq-text">Need Help Matching?</p>
@@ -343,6 +386,16 @@
   </div>
 </footer>
 
+        <div id="cookie-popup" class="cookie-popup">
+    <div class="popup-wrapper">
+        <h2 class="popup-title">Cookies Policy</h2>
+        <p class="cookie-class">We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn-accept">ACCEPT COOKIES</button>
+            <button id="decline-cookies" class="btn-decline">DECLINE COOKIES</button>
+        </div>
+    </div>
+</div>
 
   </body>
 </html>
