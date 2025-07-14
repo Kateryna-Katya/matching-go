@@ -1,0 +1,86 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./footer.css');
+@import url('./header.css');
+
+
+.background-policy {
+    text-align: left;
+}
+.header-wrapper{
+    display: none;
+}
+.privacy-title {
+    margin-top: 100px;
+    margin-bottom: 30px;
+text-align: center;
+}
+
+.text-span {
+    font-weight: 700;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy-subtitle {
+font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.policy-list {
+    list-style-type: disc;
+    padding-left: 16px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.text {
+    margin-top: 16px;
+}
+
+.mail-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.mob-block {
+    display: none;
+}
+
+@media only screen and (min-width: 1439px) {
+    .policy-container {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+.background-policy{
+    font-size: 24px;
+}
+ 
+    .privacy-title {
+        margin-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+    }
+
+    .policy-subtitle {
+        font-size: 24px;
+    }
+
+    .mob-block {
+        display: inline;
+    }
+}
